@@ -1,0 +1,82 @@
+.container {
+    background-color: lightgrey;
+    padding: 2% 0px;
+    margin: 5% 0px;
+    border-radius: 10px;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+}
+
+.form h2 {
+    color: #2596be;
+}
+
+.control {
+    margin: 5% auto;
+}
+
+.control input {
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+}
+
+.control-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 3%;
+}
+
+.control-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-profile {
+    display: flex;
+    align-items: center;
+}
+
+.control-profile input {
+    width: 20% !important;
+    margin: 0;
+}
+
+.control-interest {
+    display: flex;
+    margin: 3% 0px;
+}
+
+.control-interest input {
+    width: 20%;
+    margin: 0;
+}
+
+.control-password input {
+    margin: 3% 0px;
+}
+
+.control-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-btn input {
+    width: 40%;
+    background-color: #2596be;
+    color: white;
+}
+
+#btn-del {
+    background-color: #abdbe3;
+    color: #2596be;
+}
+
+.btn-login input {
+    width: 100%;
+}
