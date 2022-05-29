@@ -285,3 +285,13 @@ footer p {
         color: #2596be;
     }
 }
+
+@media (min-width: 980px) {
+    article {
+        box-shadow: none;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
