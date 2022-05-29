@@ -13,18 +13,30 @@ hr {
 
 header {
     width: 100%;
-    max-height: 280px;
+    /* max-height: 280px; */
     background-color: #EAC926;
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
+    z-index: 1;
 }
 
 .logo {
     max-width: 450px;
 }
 
+main {
+    width: 90vw;
+    text-align: center;
+    margin: 3% auto;
+}
+
 h2 {
     font-size: 24px;
+}
+
+form {
+    display: flex;
+    width: 90%;
 }
 
 .search-bar {
@@ -36,13 +48,15 @@ h2 {
 .search-bar input {
     width: 90%;
     margin-right: 1%;
+    padding: 1%;
 }
 
 .search-bar i {
     font-size: 1em;
     background-color: #ebebeb;
     border: 1px solid black;
-    padding: 3px;
+    padding: 1%;
+    margin: auto 0;
 }
 
 .apart-paragraf {
@@ -53,6 +67,11 @@ nav {
     display: none;
 }
 
+article {
+    margin: 0px 2%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 .prices {
     font-size: 18px;
     margin: 0;
@@ -60,7 +79,7 @@ nav {
 
 .offers,
 .description {
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 .offers {
@@ -73,6 +92,7 @@ nav {
 
 .description {
     display: none;
+    text-align: center;
     margin: 0;
     margin-bottom: 10%;
 }
@@ -96,16 +116,6 @@ nav {
     max-height: 250px;
 }
 
-main {
-    width: 90vw;
-    text-align: center;
-    margin: 0 auto 10px;
-}
-
-.main-header {
-    margin-top: 225px;
-}
-
 .product {
     max-width: 75%;
     text-align: center;
@@ -114,7 +124,7 @@ main {
 }
 
 .product img {
-    width: 100%;
+    width: 80%;
     max-width: 250px;
 }
 
@@ -123,13 +133,16 @@ main {
     padding: 3%;
 }
 
+.product div:hover .description {
+    display: block;
+}
+
 .shipping-icon {
     display: flex;
     justify-content: end;
     align-items: center;
     border-top: 1px solid #ebebeb;
 }
-
 
 .price-box {
     display: flex;
@@ -172,13 +185,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-@media (min-width: 250px) {
-    .product div:hover .description {
-        display: block;
-    }
-}
-
-@media (min-width: 480px) {
+@media (min-width: 450px) {
     .header {
         display: flex;
         justify-content: space-between;
@@ -231,10 +238,10 @@ footer p {
 }
 
 @media (min-width: 700px) {
-    header {
+    /* header {
         position: static;
         padding-bottom: 20%;
-    }
+    } */
 
     body {
         font-size: 16px;
@@ -258,12 +265,8 @@ footer p {
         margin-bottom: 5%;
     }
 
-    article {
-        margin: 0px 2%;
-    }
-
-    article:hover {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .product {
+        width: 22%;
     }
 
     footer {
