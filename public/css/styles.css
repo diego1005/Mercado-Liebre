@@ -12,7 +12,11 @@ hr {
 }
 
 header {
+    width: 100%;
+    max-height: 280px;
     background-color: #EAC926;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
@@ -51,7 +55,7 @@ nav {
 
 .prices {
     font-size: 18px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .offers,
@@ -60,12 +64,17 @@ nav {
 }
 
 .offers {
-    color: green;
-    margin-top: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #39b54a;
+    margin-left: 5%;
+    margin-right: auto;
 }
 
 .description {
     display: none;
+    margin: 0;
+    margin-bottom: 10%;
 }
 
 .burger-menu {
@@ -82,8 +91,9 @@ nav {
 }
 
 .slider img {
-    display: block;
+    display: none;
     width: 100%;
+    max-height: 250px;
 }
 
 main {
@@ -92,27 +102,52 @@ main {
     margin: 0 auto 10px;
 }
 
-article {
+.main-header {
+    margin-top: 225px;
+}
+
+.product {
     max-width: 75%;
     text-align: center;
     margin-bottom: 10px;
     margin: 0 auto 20px;
 }
 
-article img {
+.product img {
     width: 100%;
     max-width: 250px;
 }
 
-article div {
+.product div {
     text-align: start;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
+    padding: 3%;
 }
 
-article i {
-    font-size: 1.5rem;
-    color: green;
+.shipping-icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+}
+
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shipping-icon i {
+    font-size: 1.1rem;
+    color: #39b54a;
+    padding: 2%;
+    border-radius: 50%;
+    border: 1px #39b54a solid;
+    transition: transform 1.5s;
+}
+
+.shipping-icon i:hover {
+    transform: rotate(-90deg)
 }
 
 footer {
@@ -131,18 +166,14 @@ footer p {
     margin-bottom: 10px;
 }
 
-footer i {
+.footer-icon i {
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
 }
 
 @media (min-width: 250px) {
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    .description {
+    .product div:hover .description {
         display: block;
     }
 }
@@ -194,16 +225,17 @@ footer i {
         display: none;
     }
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    .description {
+    .slider img {
         display: block;
     }
 }
 
 @media (min-width: 700px) {
+    header {
+        position: static;
+        padding-bottom: 20%;
+    }
+
     body {
         font-size: 16px;
     }
@@ -230,6 +262,10 @@ footer i {
         margin: 0px 2%;
     }
 
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
     footer {
         width: auto;
         display: flex;
@@ -237,7 +273,12 @@ footer i {
         align-items: center;
         font-size: 12px;
     }
+
     footer div {
         padding: 1%;
+    }
+
+    .footer-icon i:hover {
+        color: #2596be;
     }
 }
